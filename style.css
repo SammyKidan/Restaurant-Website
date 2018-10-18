@@ -1,0 +1,1100 @@
+/* Core Styles */
+*{
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   text-decoration: none;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+
+
+
+h1  {
+ font-family: 'Allan', Helvetica, Arial, sans-serif;
+ font-size: 70px;
+ line-height: 75px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+ font-family: Arial, Georgia, Times, serif;
+ font-size: 18px;
+ line-height: 25px;
+ margin: 0;
+ padding: 1em 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+.btn {
+  display: inline-block;
+  background: white;
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  border: 1px solid #666;
+  margin: 0.5em 0;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: #eaeaea;
+  color: #333;
+}
+
+.wrapper {
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  color: black;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 5%;;
+ opacity: 0.99;
+  display: grid;
+  grid-gap: 20px;
+  width: 100%;
+  height:auto;
+  margin: 0 auto;
+  display: block;
+  overflow-x: hidden;
+
+  grid-template-rows: 4rem 1fr 1fr 1fr 1fr 1fr 30px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'nav'
+    'showcase'
+    'sectionA'
+    'sectionB'
+    'sectionC'
+    'sectionD'
+    'sectionE'
+    'footer'
+
+}
+
+
+/* Section Layout */
+
+
+/*--Navigation--*/
+nav.desk,
+nav.mob {
+  grid-area: nav;
+}
+
+nav.desk ul {
+  position: absolute;
+  position: fixed;
+  top:0;
+  left:0;
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  background-color: #fff;
+  color: black;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  width: 100%;
+}
+
+.desk .logo {
+  font-size: 40px;
+  position: relative;
+  left: 0;
+  margin-right: 10px;
+  padding: 15px;
+  line-height: 3.5rem;
+  border: 2px black double;
+  border-radius: 15px;
+  float: left;
+}
+
+
+.desk li {
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+}
+
+
+
+.desk a {
+  background: var(--primary);
+  display:block;
+  text-decoration: none;
+  font-style: italic;
+  padding: 1em;
+  float: right;
+  text-align: center;
+  color: black;
+  text-transform:;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow);
+  font-weight: bold;
+}
+
+nav a:hover {
+color: #DAB855;
+
+}
+
+
+
+nav.mob,
+.hamburger-btn {
+  display: none;
+}
+
+
+
+
+/*--Hero Section--*/
+
+.contentWrapHero{
+  grid-area: showcase;
+  background: url("https://static1.squarespace.com/static/558d04b2e4b0750606e349c9/55a226d6e4b0417147b993be/55d4371ae4b014599362750a/1440056510677/_MG_4635.jpg?format=2500w");
+  color: white;
+  padding: 10em;
+  margin: 0 auto;
+  height: 46vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.95;
+  position: relative;
+
+
+ overflow: hidden;
+ max-height: 43%;
+ position: relative;
+ z-index: 2;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+}
+
+.contentWrapHero {
+  position: relative;
+  top:0;
+  left: 0;
+  margin: 50px;
+  margin-top: 100px;
+}
+
+
+.contentWrapHero h1 {
+  font-size: 60px;
+  line-height: 3.5rem;
+  color: black;
+  position: relative;
+  top: 160;
+  background: white;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  margin: auto;
+  border: 2px black double;
+}
+
+
+
+/*--Section A--*/
+
+#section-a {
+  display: grid;
+  grid-area; sectionA;
+  grid-template-columns: 1fr;
+  background-color: ;
+  padding: 25px;
+  margin: 6em auto;
+
+}
+
+.OurStory {
+  display: flex;
+  justify-content: center;
+}
+
+.storyImg{
+
+    height: inherit;
+    background: url("https://images.pexels.com/photos/6539/black-and-white-italian-people-street.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 50vw;
+    margin: 0 auto;
+    color: white;
+    padding: 5em;
+}
+
+.content-text {
+margin-left: 40px;
+display: flex;
+flex-direction: column;
+margin-top: 1em;
+}
+
+   .content-title {
+     color: black;
+     font-size: 3em;
+     font-style: italic;
+     font-family: cardo;
+     font-weight: lighter;
+     padding: 7px;
+     border-bottom: black 5px double;
+     margin: 40px auto;
+     background-color: white;
+     color: black;
+     opacity: 0.96;
+     width: 500px;
+
+   }
+
+
+
+
+   .content-text > p {
+     font-style:  arial;
+     font-size: 1em;
+     color: black;
+     line-height: 3em;
+     margin: 6rem auto;
+     padding: 0;
+
+   }
+
+
+
+
+
+   /*--Section B--*/
+   #section-b {
+     display: grid;
+     grid-area: sectionB;
+     padding: 10px;
+     margin-bottom: 6em auto;
+     width: auto;
+     position: relative;
+     left:0;
+
+
+
+   }
+
+
+   .section-b-wrap {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: flex-start;
+     flex-wrap: wrap;
+     margin: 5px auto;
+     padding: 2em;
+     background-color: white;
+     color: black;
+     height: auto;
+     width: 80%;
+
+   }
+
+      .pizzaContent {
+      width: 30%;
+      height: auto;
+      padding: 1px;
+      margin: 10px auto;
+      border: 5px black solid;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+
+
+   .pizzaText > h2 {
+     font-size: 27px;
+     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+   }
+
+   .pizzaText > p {
+     font-size: 16px;
+     font-family: monospace;
+   }
+
+
+
+
+   .pizzaTitle {
+     color: black;
+     font-size: 3em;
+     font-style: italic;
+     font-family: cardo;
+     font-weight: lighter;
+     padding: 7px;
+     margin: 0 auto;
+     border-bottom: black 6px double;
+     font-weight: bold;
+     margin-bottom: 50px;
+     background-color: white;
+     color: black;
+     opacity: 0.8;
+     width: 500px;
+   }
+
+   .pizzaTitle2 {
+     color: black;
+     font-size: 2em;
+     font-style: italic;
+     font-family: cardo;
+     font-weight: lighter;
+     padding: 0px;
+     margin: 0 auto;
+     border-bottom: black 6px double;
+     font-weight: bold;
+     margin-bottom: 50px;
+     background-color: black;
+     color: white;
+     opacity: 0.8;
+     width: 100%;
+   }
+
+
+
+
+
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800;);
+  .snip1516 {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #fff;
+    color: #ffffff;
+
+
+  }
+  .snip1516 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+
+  }
+  .snip1516 .pizza1 .pizza2 .pizza3 {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center;
+
+
+  }
+
+  .pizza1 {
+    height: inherit;
+    background: url('https://bluerosepictures.files.wordpress.com/2014/10/seattle-food-photographer91.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px black solid;
+
+  }
+
+  .pizza2 {
+height: inherit;
+    background: url('https://bluerosepictures.files.wordpress.com/2014/10/seattle-food-photographer91.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .pizza3 {
+    height: inherit;
+    background: url('https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2018/01/cajun-pizza.jpg?itok=cV59LKgS');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .snip1516 figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    line-height: 1em;
+    -webkit-transform: translateX(-75%) rotate(-180deg);
+    transform: translateX(-75%) rotate(-180deg);
+  }
+  .snip1516 figcaption:before {
+    content: '';
+    background-color: #000000;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  .snip1516 h3 {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  .snip1516 h3 span {
+    display: block;
+    font-weight: 800;
+  }
+  .snip1516 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .snip1516:hover > .pizza1, .pizza2, .pizza3,
+  .snip1516.hover > div {
+    opacity: 0.95;
+  }
+  .snip1516:hover figcaption,
+  .snip1516.hover figcaption {
+    -webkit-transform: translate(0px) rotate(0deg);
+    transform: translate(0px) rotate(0deg);
+    opacity: 1;
+  }
+
+
+
+
+/*--Section C--*/
+   #section-c {
+       display: grid;
+       grid-area: sectionC;
+       opacity: 0.95;
+       margin: 6em auto;
+       background-color: white;
+   }
+
+   .container-slides {
+     margin: 10px;
+     height: 100%;
+     object-fit: cover;
+
+   }
+
+   .carousel-cell {
+   /* height of carousel */
+   width: 100vw; /* full width */
+   height: 80vh;
+   margin-right: 10px;
+
+}
+
+.carousel-cell img {
+  width: auto;
+  height: auto;
+
+}
+
+.galleryTitle {
+  color: black;
+  font-size: 3em;
+  font-style: italic;
+  font-family: cardo;
+  font-weight: lighter;
+  padding: 7px;
+  border-bottom: black 5px double;
+  margin: 40px auto;
+  background-color: white;
+  color: black;
+  opacity: 0.96;
+  width: 500px;
+}
+
+
+/* position dots in gallery */
+.flickity-page-dots {
+
+
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: black;
+}
+
+
+/* Reservation Booking */
+
+#section-d {
+    display: grid;
+    grid-area: sectionC;
+    opacity: 0.95;
+    margin: 6em auto;
+    background-color: white;
+    height: 100vh;
+}
+
+.reservation {
+  width: 100%;
+  background: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+#contact-form {
+  color: rgba(0, 0, 0, 0.7);
+  background: white;
+  padding: 1.5rem 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#contact-form h3 {
+  margin: 0 0 1.5rem;
+  font-size: 1.4rem;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+#contact-form input:not(.btn) {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 0 0.25rem;
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: border-color 0.2s ease-out;
+  -moz-transition: border-color 0.2s ease-out;
+  -ms-transition: border-color 0.2s ease-out;
+  -o-transition: border-color 0.2s ease-out;
+  transition: border-color 0.2s ease-out;
+  line-height: 40px;
+}
+
+#contact-form input:not(.btn):focus,
+#contact-form input:not(.btn):active {
+  outline: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+#contact-form select {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0 0.25rem;
+}
+
+#contact-form select option {
+  margin-bottom: 0.5rem;
+}
+
+#contact-form .form-row {
+  margin-bottom: 1.2rem;
+}
+
+#contact-form .send-btn {
+  float: right;
+  margin-top: 0.5rem;
+}
+
+#message {
+  max-width: 100%;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 0 0.25rem;
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: border-color 0.2s ease-out;
+  -moz-transition: border-color 0.2s ease-out;
+  -ms-transition: border-color 0.2s ease-out;
+  -o-transition: border-color 0.2s ease-out;
+  transition: border-color 0.2s ease-out;
+}
+
+#message:focus,
+#message:active {
+  outline: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+  background: #d47d52;
+  color: #fff;
+  font-size: 1.2rem;
+  width: 250px;
+  height: 50px;
+  text-transform: uppercase;
+  text-shadow: none;
+  position: relative;
+  border: none;
+  display: inline-block;
+}
+
+.form-button{
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+[class*=col] {
+  padding: 0 1rem;
+}
+
+.col {
+  flex-grow: 1;
+}
+
+.col-100 {
+    width: 100%;
+    color: black;
+    height: 80px;
+    margin-top: 30px;
+}
+
+
+
+
+/* Map*/
+#section-e {
+    display: grid;
+    grid-area: sectionC;
+    opacity: 0.95;
+    margin: 2em auto;
+    background-color: white;
+    height: auto;
+    margin-bottom: 20vh;
+
+padding: 0 10%;
+}
+
+.location img {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.location {
+  width: 100%;
+  height: auto;
+  background: white;
+  text-align: center;
+}
+
+.location > h2 , span {
+  margin: 10px 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  line-height: 1;
+}
+
+.joinUsSpan{
+  line-height: 25px;
+  padding: inherit;
+  margin-top: 10px;
+text-align: center;
+
+}
+
+/*Footer*/
+
+
+footer {
+	display: block;
+	width: 80%;
+	position: relative;
+	background-color: white;
+	margin: 0 auto;
+	padding: 0.5em;
+  text-align: center;
+  bottom:0;
+	color: black;
+}
+
+.footerWrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+   width: 90%;
+   margin: 0 auto;
+	 padding: 10px;
+	 flex-wrap: wrap;
+
+}
+
+footer ul {
+margin: 40px auto;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width:30%;
+
+}
+
+footer ul h3 {
+	font-size: 1.5rem;
+	font-style: 'heebo';
+	font-weight: bold;
+	color: black;
+	padding: 0px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	letter-spacing: 0px;
+	border-radius: 7em;
+	width: 100%;
+
+
+}
+
+footer ul li {
+	font-size: 1rem;
+line-height: 2em;
+color: grey;
+padding: 5px;
+margin: 0 auto;
+width: 100%;
+text-align: center;
+text-decoration: none;
+}
+
+footer ul li:hover {
+	font-size: 1rem;
+line-height: 2em;
+color: orange;
+padding: 5px;
+margin: 0 auto;
+width: 100%;
+text-align: center;
+}
+
+.footerWrap h2{
+	font-size: 20px;
+	font-style: 'heebo';
+	color: grey;
+}
+
+.contactWrap {
+	line-height: 2.3em;
+	padding: 5px;
+	margin: 0 auto;
+	border-bottom: 1px black double;
+  width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+
+
+}
+
+.contactWrap h2 {
+margin: 0 20px;
+}
+
+.footerBorder {
+	width:90%;
+	margin: 0 auto;
+	padding: 10px;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+  align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: inherit;
+}
+
+ #copyRight {
+ 	color: grey;
+ 	display:flex;
+ 	flex-direction: row;
+ 	justify-content: center;
+ 	margin: 10px auto;
+ 	align-items: center;
+	text-align: center;
+	width: 100%;
+	font-size: small;
+}
+
+#socialIcons {
+	color: lightgrey;
+	display: flex;
+	width: 20%;
+	flex-direction: row;
+  justify-content: space-around;
+	align-items: center;
+}
+
+.fab  {
+padding: 4px;
+font-size: 2rem;
+color: black;
+}
+
+.fab:hover  {
+padding: 4px;
+font-size: 2rem;
+color: orange;
+transition-delay: 0.03s;
+}
+
+
+
+/* RESPONSIVE STYLES */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 300px) {
+
+  .section-b-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px auto;
+    padding: 2em;
+    background-color: white;
+    color: black;
+   height: auto;
+   width:auto;
+  }
+
+     .pizzaContent {
+     width: 100%;
+     height: auto;
+     padding: 1px;
+     margin: 10px 10px;
+     border: 5px black solid;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+   }
+
+}
+
+/*@media only screen and (max-width: 700px) {
+  .section-b-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 5px auto;
+    padding: 2em;
+    background-color: white;
+    color: black;
+   height: auto;
+
+  }
+
+     .pizzaContent {
+     width: 100%;
+     height: auto;
+     padding: 1px;
+     margin: 10px 10px;
+     border: 5px black solid;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+   }
+}*/
+
+
+
+@media screen and (max-width: 920px) {
+  nav.desk {
+    display: none;
+  }
+
+  nav.mob,
+  .hamburger-btn {
+  display: block;
+  position: absolute;
+  width: 100vw;
+  margin: 0 auto;
+  top:0;
+  left:0;
+  }
+
+  .mob {
+    position: sticky;
+    height: auto;
+    z-index: 3;
+    background-color: white;
+    opacity: 0.96;
+  }
+
+  .hamburger-btn {
+    position: relative;
+  }
+
+
+
+  .hamburger-btn .fa-bars,
+  .hamburger-btn .fa-times {
+    position: fixed;
+    right: 25px;
+    top: 15px;
+    font-size: 35px;
+    color: black;
+    cursor: pointer;
+  }
+
+  .mob ul{
+    margin-top: 0;
+    display: none;
+
+  }
+
+  .mob li {
+    list-style: none;
+    text-align: center;
+    padding: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+  }
+
+  .mob a {
+    text-decoration: none;
+    display:block;
+    text-decoration: none;
+    font-style: italic;
+    padding: 1em;
+    text-align: center;
+    color: black;
+    text-transform:;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px black solid;
+    border-radius: 10px;
+  }
+
+
+
+  .mob ul.active {
+    display: block;
+    height: 100vh;
+
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1100px) {
+  .section-b-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 5px auto;
+    padding: 2em;
+    background-color: white;
+    color: black;
+   height: auto;
+
+  }
+
+     .pizzaContent {
+     width: 100%;
+     height: auto;
+     padding: 1px;
+     margin: 10px 10px;
+     border: 5px black solid;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+   }
+
+}
