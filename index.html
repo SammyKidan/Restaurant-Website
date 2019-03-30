@@ -7,38 +7,19 @@
   <title>The Italian Village</title>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
   <link href="https://fonts.googleapis.com/css?family=Allan" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <!-- JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $(".hamburger-btn .fa-times").hide();
-
-    $(".hamburger-btn .fa-bars").click(function(){
-      $(this).hide();
-      $(".hamburger-btn .fa-times").show();
-      $(".mob ul").addClass("active");
-    });
-
-    $(".hamburger-btn .fa-times").click(function(){
-      $(this).hide();
-      $(".hamburger-btn .fa-bars").show();
-      $(".mob ul").removeClass("active");
-    });
-    });
-  </script>
 </head>
 
 <body>
 <div class="wrapper">
 
   <!-- Header Showcase -->
-  <header id="showcase" class="grid">
+  <header class="container grid" id="showcase">
 
     <nav class="desk">
       <ul>
@@ -69,14 +50,23 @@
         <li><a  id="mobContact"href="#section-e">Contact Us</a></li>
       </ul>
     </nav>
+  </header>
+  <!-- End Of Header Showcase -->
 
+  <!-- Hero Section -->
+  <section class="section" id="hero">
+    <div class="column">
 
     <div class="contentWrapHero">
 
     </div>
 
-  </header>
-  <!-- End Of Header Showcase -->
+        </div>
+
+  </section>
+  <!--  End Of Hero -->
+
+
 
   <!-- Main Area -->
 
@@ -84,30 +74,40 @@
 
   <!-- Section A -->
 
-  <section id="section-a" class="grid">
+
+  <section id="section-a" class="section">
 
 
-    <div class="ourStory">
+    <div class="container-is-fluid ">
 
-      <div class="content-text">
-        <h2 class="content-title">Our Story</h2>
-          <div class="storyImg"></div>
-        <p> In 1979 there were only three Italian Restaurants in Fort Myers;
-        one of those being LaMotta’s Italian Restaurant & Pizzeria.
-        We have been in business for 33 years now. <br/>
-        Throughout these many years we have witnessed many changes in the area as far as restaurants, people, and stores that have come and gone.
-         In our shopping center alone,
-        the view from our front windows has changed from a Publix to now Big Lot’s.</p>
-      </div>
+        <div class="colums ">
+          <h2 class="content-title">Our Story</h2>
+          <p class="column is-two-thirds content-text ">  The italian Village began life in 2011 with a mobile wood-fired oven hand built by Ry Jessup.  We launched The Italian Village with an event at London Fields Brewery and sold out within hours. We gained real momentum serving up slices at markets and festivals with Kerb, Street Feast and Frieze, which culminated in our residency at Kings Cross Filling Station in 2012.
+It was through Ry’s connection with Mark Wogan that the idea of moving to bricks and mortar came about.</p>
+
+<p class="column is-two-thirds content-text ">Through his background in the restaurant industry and his passion for simple food done well, Mark dovetailed with what Homeslice were trying to achieve.
+So, with Mark’s brother Alan looking after the business side of things, Mark and Ry began work establishing their first restaurant in Shoreditch in the early part of 2013.  With a shared vision of retaining Homeslice’s original simplicity, the aim was to balance tradition with innovation, offering people our take on the classics alongside more unique flavour combinations. The result was a simple menu of pizza, beer and wine with quality, seasonal produce at its heart, served in a relaxed, friendly space. </p>
+        </div>
+
+
+    </div>
+
+
+  </section>
+
+  <section class="section-is-full">
+    <div class="is-fluid">
+      <img id="storyImg" src="./img/pizza.jpg" />
     </div>
   </section>
 
+
   <!-- Section B -->
 
-  <section id="section-b" class="grid">
+  <section class="section" id="section-b" >
 
 
-<h1 class="pizzaTitle">Pizza's</h1>
+<h1 class="content-title">Pizza's</h1>
 
 
 <div class="section-b-wrap">
@@ -121,10 +121,11 @@
                       <a href="#"></a>
           </figure>
                        <div class="pizzaText">
-                      <p>In our shopping center alone,
-                     the view from our front windows has changed from a Publix to now Big Lot’s</p>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut sed do eiusmod .</p>
+                    <a class="button is-size-4 is-rounded">View Menu</a>
                      </div>
        </div>
+
 
 
 
@@ -138,8 +139,8 @@
                         <a href="#"></a>
             </figure>
                          <div class="pizzaText">
-                        <p>In our shopping center alone,
-                       the view from our front windows has changed from a Publix to now Big Lot’s</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut sed do eiusmod .</p>
+                       <a class="button is-size-4  is-rounded">View Menu</a>
                        </div>
         </div>
 
@@ -155,10 +156,60 @@
                           <a href="#"></a>
               </figure>
                            <div class="pizzaText">
-                          <p>In our shopping center alone,
-                         the view from our front windows has changed from a Publix to now Big Lot’s</p>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut sed do eiusmod .</p>
+                         <a class="button is-size-4  is-rounded">View Menu</a>
                          </div>
         </div>
+
+        <div class= "pizzaContent">
+          <h4 class="pizzaTitle2">Spicy</h4>
+              <figure class="snip1516">
+                  <div class="pizza1"></div>
+                      <figcaption>
+                          <h3><span>Spicy</span></h3>
+                      </figcaption>
+                          <a href="#"></a>
+              </figure>
+                           <div class="pizzaText">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut sed do eiusmod .</p>
+                         <a class="button is-size-4 is-rounded">View Menu</a>
+                         </div>
+           </div>
+
+
+
+
+          <div class= "pizzaContent">
+            <h2 class="pizzaTitle2">Special</h2>
+                <figure class="snip1516">
+                    <div class="pizza2"></div>
+                        <figcaption>
+                            <h3>Special</h3>
+                        </figcaption>
+                            <a href="#"></a>
+                </figure>
+                             <div class="pizzaText">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut sed do eiusmod .</p>
+                           <a class="button is-size-4  is-rounded">View Menu</a>
+                           </div>
+            </div>
+
+
+
+            <div class= "pizzaContent">
+              <h2 class="pizzaTitle2">Kids</h2>
+                  <figure class="snip1516">
+                      <div class="pizza3"></div>
+                          <figcaption>
+                              <h3>Kids</h3>
+                          </figcaption>
+                              <a href="#"></a>
+                  </figure>
+                               <div class="pizzaText">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut sed do eiusmod .</p>
+                             <a class="button is-size-4  is-rounded">View Menu</a>
+                             </div>
+            </div>
 
 
     </div>
@@ -166,26 +217,36 @@
 
   </section>
 
-  <!-- Section C -->
-  <section id="section-c" class="grid">
+  <section class="section-is-full">
+    <div class="is-fluid">
+      <img id="storyImg" src="./img/contactUs.jpg" />
+    </div>
+  </section>
 
-    <h1 class="galleryTitle">Gallery</h1>
+  <!-- Section C -->
+  <section class="section" id="section">
+
+    <h1 class="content-title">Gallery</h1>
+<div class="column">
+
 
   <!-- Flickity HTML init -->
-  <div class="container-slides" "data-flickity">
-   <div class="carousel-cell"><img src="https://static1.squarespace.com/static/558d04b2e4b0750606e349c9/55a226d6e4b0417147b993be/564c94eae4b004a31bf65bc1/1447859449159/_MG_0332.jpg?format=2500w"></div>
+  <div class="is-full container-slides" "data-flickity">
+    <div class="carousel-cell"><img src="https://static1.squarespace.com/static/558d04b2e4b0750606e349c9/55a226d6e4b0417147b993be/564c94eae4b004a31bf65bc1/1447859449159/_MG_0332.jpg?format=2500w"></div>
     <div class="carousel-cell"><img src="https://static1.squarespace.com/static/558d04b2e4b0750606e349c9/55a226d6e4b0417147b993be/55d4371ae4b014599362750a/1440056510677/_MG_4635.jpg?format=2500w"></div>
     <div class="carousel-cell"><img src="https://static1.squarespace.com/static/558d04b2e4b0750606e349c9/55a226d6e4b0417147b993be/564c943de4b00be1a7b27aff/1447859281619/_MG_0273.jpg?format=2500w"></div>
     <div class="carousel-cell"><img src="https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
   </div>
 
-
+</div>
   </section>
 
 
 
+
+
   <!-- Section D-->
-  <section id="section-d" class="grid">
+  <section class="section" id="section-d">
     <div class="content-wrap">
       <h2 class="content-title">Make A Booking</h2>
 
@@ -266,13 +327,20 @@
     </div>
   </section>
 
+  <section class="section-is-full">
+    <div class="is-fluid">
+      <img id="storyImg" src="https://images.pexels.com/photos/6539/black-and-white-italian-people-street.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
+    </div>
+  </section>
+
 
   <!-- Section e-->
-  <section id="section-e" class="grid">
-    <div class="content-wrap">
+  <section class="section" >
+
+    <div class="container content-wrap">
       <h2 class="content-title">Contact Us</h2>
 
-<section id="map">
+<section class="section" id="map">
 
   <div class="location">
     <img src="https://image.flaticon.com/icons/svg/684/684809.svg">
@@ -282,21 +350,25 @@
       <span class="second">Email: italianvillage@hotmail.co.uk</span>
   </div>
 
-  <div style="width: 100%"><iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=shoreditch%20highstreet+(The%20Italian%20Village)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Embed Google Map</a></iframe></div>
+  <div style="width: 100%">
+    <iframe class="map" width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=shoreditch%20highstreet+(The%20Italian%20Village)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Embed Google Map</a></iframe>
+  </div>
 
 <div class="location">
-    <h2>Join Us</h2>
-<span class="joinUsSpan"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+    <h2 id="joinUs">Join Us</h2>
+<span class="content-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
 </div>
 
 </section>
     </div>
   </section>
 
+
+
   <!-- Footer -->
 
-  <footer>
-    <div class="footerWrap">
+  <footer class="section">
+    <div class="column footerWrap">
 
   <div class="contactWrap">
   <h2>1st Floor, 140 Old St, London EC1V 9BJ</h2>
@@ -319,6 +391,27 @@
 </div>
 
 </body>
+
+<!-- JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".hamburger-btn .fa-times").hide();
+
+$(".hamburger-btn .fa-bars").click(function(){
+  $(this).hide();
+  $(".hamburger-btn .fa-times").show();
+  $(".mob ul").addClass("active");
+});
+
+$(".hamburger-btn .fa-times").click(function(){
+  $(this).hide();
+  $(".hamburger-btn .fa-bars").show();
+  $(".mob ul").removeClass("active");
+});
+});
+</script>
 <script type="text/javascript">
 (function($){
 
