@@ -74,7 +74,7 @@ body {
   font-size: 1.1em;
   line-height: 1.5;
   text-align: center;
-  padding: 0 5%;;
+  padding: 0 ;;
  opacity: 0.99;
   display: grid;
   grid-gap: 20px;
@@ -103,13 +103,14 @@ body {
 
 
 /*--Navigation--*/
+
 nav.desk,
 nav.mob {
   grid-area: nav;
 }
 
 nav.desk ul {
-  position: absolute;
+
   position: fixed;
   top:0;
   left:0;
@@ -131,6 +132,7 @@ nav.desk ul {
 
 .desk .logo {
   font-size: 40px;
+  font-weight: 800;
   position: relative;
   left: 0;
   margin-right: 10px;
@@ -142,8 +144,9 @@ nav.desk ul {
 }
 
 
+
+
 .desk li {
-  border-left: 1px black solid;
   border-right: 1px black solid;
 }
 
@@ -180,26 +183,19 @@ nav.mob,
 
 
 /*--Hero Section--*/
-
+#hero{
+  padding: 0;
+}
 .contentWrapHero{
-  grid-area: showcase;
   background: url("https://static1.squarespace.com/static/558d04b2e4b0750606e349c9/55a226d6e4b0417147b993be/55d4371ae4b014599362750a/1440056510677/_MG_4635.jpg?format=2500w");
   color: white;
-  padding: 10em;
   margin: 0 auto;
-  height: 46vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   opacity: 0.95;
   position: relative;
-
-
- overflow: hidden;
- max-height: 43%;
- position: relative;
- z-index: 2;
-
  display: flex;
  flex-direction: column;
  justify-content: flex-start;
@@ -209,8 +205,7 @@ nav.mob,
   position: relative;
   top:0;
   left: 0;
-  margin: 50px;
-  margin-top: 100px;
+  margin: 0 auto;
 }
 
 
@@ -237,67 +232,44 @@ nav.mob,
 /*--Section A--*/
 
 #section-a {
-  display: grid;
-  grid-area; sectionA;
-  grid-template-columns: 1fr;
-  background-color: ;
-  padding: 25px;
-  margin: 6em auto;
 
 }
 
-.OurStory {
-  display: flex;
-  justify-content: center;
+
+#storyImg{
+width: 100vw;
+height: 80vh;
+object-fit: cover;
+margin: 0 auto;
+color: white;
+padding: 0em;
+margin:0;
+opacity: 0.9;
 }
 
-.storyImg{
-
-    height: inherit;
-    background: url("https://images.pexels.com/photos/6539/black-and-white-italian-people-street.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    width: 50vw;
-    margin: 0 auto;
-    color: white;
-    padding: 5em;
-}
-
-.content-text {
-margin-left: 40px;
-display: flex;
-flex-direction: column;
-margin-top: 1em;
-}
 
    .content-title {
      color: black;
-     font-size: 3em;
+     font-size: 4em;
      font-style: italic;
      font-family: cardo;
      font-weight: lighter;
-     padding: 7px;
-     border-bottom: black 5px double;
      margin: 40px auto;
+     font-weight: 800;
      background-color: white;
      color: black;
      opacity: 0.96;
-     width: 500px;
 
+     text-align: center;
    }
 
 
-
-
-   .content-text > p {
+   .content-text  {
      font-style:  arial;
      font-size: 1em;
      color: black;
      line-height: 3em;
      margin: 6rem auto;
-     padding: 0;
 
    }
 
@@ -307,16 +279,8 @@ margin-top: 1em;
 
    /*--Section B--*/
    #section-b {
-     display: grid;
-     grid-area: sectionB;
      padding: 10px;
      margin-bottom: 6em auto;
-     width: auto;
-     position: relative;
-     left:0;
-
-
-
    }
 
 
@@ -338,9 +302,11 @@ margin-top: 1em;
       .pizzaContent {
       width: 30%;
       height: auto;
-      padding: 1px;
-      margin: 10px auto;
-      border: 5px black solid;
+      padding: 2rem;
+      border-radius: 5px;
+      margin: 60px auto;
+      margin-bottom: 5rem;
+      border: 2px solid black;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -363,40 +329,21 @@ margin-top: 1em;
    }
 
 
-
-
-   .pizzaTitle {
-     color: black;
-     font-size: 3em;
-     font-style: italic;
-     font-family: cardo;
-     font-weight: lighter;
-     padding: 7px;
-     margin: 0 auto;
-     border-bottom: black 6px double;
-     font-weight: bold;
-     margin-bottom: 50px;
-     background-color: white;
-     color: black;
-     opacity: 0.8;
-     width: 500px;
-   }
-
    .pizzaTitle2 {
      color: black;
      font-size: 2em;
      font-style: italic;
      font-family: cardo;
      font-weight: lighter;
-     padding: 0px;
+     padding: 5px;
      margin: 0 auto;
-     border-bottom: black 6px double;
+     border-bottom: black 1px solid;
      font-weight: bold;
-     margin-bottom: 50px;
-     background-color: black;
-     color: white;
+     margin-bottom: 60px;
+text-align: center;
+     color:black;
      opacity: 0.8;
-     width: 100%;
+     width: 70%;
    }
 
 
@@ -440,12 +387,11 @@ margin-top: 1em;
 
   .pizza1 {
     height: inherit;
-    background: url('https://bluerosepictures.files.wordpress.com/2014/10/seattle-food-photographer91.jpg');
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHXD0ag132UjSt3F1AbsbS2UgzcobYS1TSpsO9VHBS9KvZ2BUXiQ');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border: 5px black solid;
-
   }
 
   .pizza2 {
@@ -462,6 +408,12 @@ height: inherit;
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  .pizzaText a {
+    margin-top: 20px;
+  }
+
+
   .snip1516 figcaption {
     position: absolute;
     top: 0;
@@ -527,17 +479,14 @@ height: inherit;
 
 /*--Section C--*/
    #section-c {
-       display: grid;
-       grid-area: sectionC;
-       opacity: 0.95;
-       margin: 6em auto;
-       background-color: white;
+       border: 1px solid blue;
    }
 
    .container-slides {
      margin: 10px;
      height: 100%;
-     object-fit: cover;
+
+     object-fit: contain;
 
    }
 
@@ -550,8 +499,9 @@ height: inherit;
 }
 
 .carousel-cell img {
-  width: auto;
-  height: auto;
+width: 100vw;
+  height: 80vh;
+  object-fit: cover;
 
 }
 
@@ -562,7 +512,6 @@ height: inherit;
   font-family: cardo;
   font-weight: lighter;
   padding: 7px;
-  border-bottom: black 5px double;
   margin: 40px auto;
   background-color: white;
   color: black;
@@ -593,13 +542,10 @@ height: inherit;
 /* Reservation Booking */
 
 #section-d {
-    display: grid;
-    grid-area: sectionC;
     opacity: 0.95;
     margin: 6em auto;
-    background-color: white;
-    height: 100vh;
-}
+    height: auto;
+  }
 
 .reservation {
   width: 100%;
@@ -735,23 +681,16 @@ height: inherit;
 
 
 /* Map*/
-#section-e {
-    display: grid;
-    grid-area: sectionC;
-    opacity: 0.95;
-    margin: 2em auto;
-    background-color: white;
-    height: auto;
-    margin-bottom: 20vh;
 
-padding: 0 10%;
-}
 
 .location img {
   width: 100px;
   display: block;
   margin: 0 auto;
-  padding-top: 60px;
+}
+
+.map{
+  height: 70vh;
 }
 
 .location {
@@ -759,18 +698,28 @@ padding: 0 10%;
   height: auto;
   background: white;
   text-align: center;
+  margin-bottom: 7rem;
+}
+
+.location h2 {
+  font-family: cardo;
+  font-style: italic;
+ font-size:2.5rem;
+ font-weight: 800;
 }
 
 .location > h2 , span {
-  margin: 10px 50px;
   padding: 10px;
   display: flex;
   justify-content: center;
-  line-height: 1;
+}
+
+#joinUs{
+  margin-top: 5rem;
 }
 
 .joinUsSpan{
-  line-height: 25px;
+  line-height: 2rem;
   padding: inherit;
   margin-top: 10px;
 text-align: center;
@@ -781,15 +730,7 @@ text-align: center;
 
 
 footer {
-	display: block;
-	width: 80%;
-	position: relative;
-	background-color: white;
-	margin: 0 auto;
 	padding: 0.5em;
-  text-align: center;
-  bottom:0;
-	color: black;
 }
 
 .footerWrap {
@@ -801,7 +742,6 @@ footer {
    margin: 0 auto;
 	 padding: 10px;
 	 flex-wrap: wrap;
-
 }
 
 footer ul {
@@ -858,11 +798,6 @@ text-align: center;
 }
 
 .contactWrap {
-	line-height: 2.3em;
-	padding: 5px;
-	margin: 0 auto;
-	border-bottom: 1px black double;
-  width: 60%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -927,7 +862,7 @@ transition-delay: 0.03s;
 
 /* RESPONSIVE STYLES */
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
 
   .section-b-wrap {
     display: flex;
@@ -946,9 +881,6 @@ transition-delay: 0.03s;
      .pizzaContent {
      width: 100%;
      height: auto;
-     padding: 1px;
-     margin: 10px 10px;
-     border: 5px black solid;
      display: flex;
      flex-direction: column;
      justify-content: space-around;
@@ -990,6 +922,10 @@ transition-delay: 0.03s;
 
 
 @media screen and (max-width: 920px) {
+
+  .logo{
+    font-size: 2.2rem;
+  }
   nav.desk {
     display: none;
   }
@@ -997,20 +933,19 @@ transition-delay: 0.03s;
   nav.mob,
   .hamburger-btn {
   display: block;
-  position: absolute;
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
   top:0;
   left:0;
   }
 
   .mob {
-    position: sticky;
+    position: fixed;
     height: auto;
     z-index: 3;
     background-color: white;
     opacity: 0.96;
-  }
+    }
 
   .hamburger-btn {
     position: relative;
@@ -1022,8 +957,8 @@ transition-delay: 0.03s;
   .hamburger-btn .fa-times {
     position: fixed;
     right: 25px;
-    top: 15px;
-    font-size: 35px;
+    top: 25px;
+    font-size: 25px;
     color: black;
     cursor: pointer;
   }
@@ -1065,6 +1000,7 @@ transition-delay: 0.03s;
     height: 100vh;
 
   }
+
 }
 
 
@@ -1087,9 +1023,7 @@ transition-delay: 0.03s;
      .pizzaContent {
      width: 100%;
      height: auto;
-     padding: 1px;
-     margin: 10px 10px;
-     border: 5px black solid;
+
      display: flex;
      flex-direction: column;
      justify-content: space-around;
